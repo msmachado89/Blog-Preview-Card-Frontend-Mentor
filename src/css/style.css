@@ -1,0 +1,115 @@
+/* https://www.figma.com/file/IAA0edszlxML0Hkt0kPVPI/blog-preview-card?type=design&node-id=28-2&mode=design&t=BlBXCCpCh1grcPNQ-0 */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: var(--desktop-max-width);
+  margin: 0 auto;
+  height: 100vh;
+
+  font-size: 1.4rem;
+  font-family: var(--font);
+  
+  background-color: var(--background-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid black;
+  max-width: 38.4rem;
+  
+  display: flex;
+  flex-direction: column;
+  
+  
+  background-color: var(--card-background-color);
+
+  padding: 2.4rem;
+
+  margin-bottom: 5rem;
+
+  border-radius: 2rem;
+
+  /* border-right: 5px solid black; */
+
+  box-shadow: .8rem .8rem black;
+
+}
+
+.card .illustration {
+  width: 100%;
+
+  border-radius: 1rem;
+  margin-bottom: 2.4rem;
+}
+
+.card .text {
+  gap: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 2.4rem;
+}
+
+.card .text .status {
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  padding: 8px 1.2rem;
+  border-radius: 4px;
+
+
+  max-width: fit-content;
+  display: inline-block;
+  background-color: var(--background-color);
+}
+
+.card .text .date {
+  font-weight: 500;
+}
+
+.card .text .title {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.card .text .title:hover {
+  color: var(--background-color);
+  cursor: pointer;
+}
+
+.card .text .info {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  line-height: 2.4rem;
+
+}
+
+.card .author {
+  display: flex;
+  align-items: center;
+
+  gap: 1.2rem;
+}
+
+.card .author img {
+  width: 3.2rem;
+}
+.card .author h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
